@@ -1,0 +1,24 @@
+.avatar {
+	display: flex;
+	gap: 0.66rem;
+	&__img {
+		background: @dark-bg;
+		border-radius: 50px;
+		overflow: hidden;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
+	&__header {
+		font-size: 1.06rem;
+		font-weight: 700;
+		color: @dark-text;
+	}
+	&__desc {
+		font-size: 0.8rem;
+		font-weight: 400;
+		color: @darkest-gray-text;
+	}
+}

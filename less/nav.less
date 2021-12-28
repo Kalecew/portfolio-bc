@@ -1,0 +1,26 @@
+.nav {
+	display: flex;
+	gap: 2.66rem;
+	align-items: center;
+	&__list {
+		display: flex;
+		gap: 2.66rem;
+	}
+	&__item {
+	}
+	&__link {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.93rem;
+		color: @dark-text;
+		border-bottom: 3px solid transparent;
+		&:hover {
+			border-bottom: 3px solid @dark-border;
+		}
+		&--active{
+			border-bottom: 3px solid @dark-border;
+		}
+	}
+	&__button {
+	}
+}

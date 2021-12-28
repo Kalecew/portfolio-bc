@@ -1,0 +1,52 @@
+.btn{
+	text-transform: uppercase;	
+	letter-spacing: 0.05em;
+	border-style: solid;
+	transition: all .2s ease-in;
+	border-radius: 2rem;
+	&--big{
+		padding: 1.3rem 1.8rem;
+		border-width: 1px;
+		font-weight: 400;
+		font-size: 1.06rem;
+		line-height: 0.87rem;
+		min-width: 170px;
+	}
+	&--little{
+		padding: 0.66rem 2rem;
+		border-width: 2px;
+		font-weight: 700;
+		font-size: 0.93rem;
+		line-height: 0.8rem;
+	}
+	&--dark{
+		background-color: @dark-btn-bg;
+		border-color: @dark-btn-border;
+		color: @light-text;
+		&:hover{
+			background-color: @light-btn-bg;
+			border-color: @dark-btn-border;
+			color: @dark-text;
+		}
+	}
+	&--gray{
+		background-color: @gray-btn-bg;
+		border-color: @gray-btn-border;
+		color: @dark-gray-text;
+		&:hover{
+			background-color: @gray-btn-bg-hover;
+			border-color: @gray-btn-border;
+			color: @light-text;
+		}
+	}
+	&--light{
+		background-color: @light-btn-bg;
+		border-color: @light-btn-border;
+		color: @dark-text;
+		&:hover{
+			background-color: @dark-btn-bg;
+			border-color: @dark-btn-border;
+			color: @light-text;
+		}
+	}
+}

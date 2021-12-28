@@ -7,23 +7,54 @@
 	<title>Portfolio</title>
 </head>
 <body>
-	<nav class="nav">
+
+	<div class="header">
 		<div class="container">
-			<div class="logo">
-				<img src="" alt="" class="logo__img">
-				<div class="logo__text">
-					<div class="logo__header">Lewis Nathaniel</div>
-					<div class="logo__desc">UI & UX Designer</div>
+			<div class="header__inner">
+				<div class="avatar">
+					<img class="avatar__img" src="" alt="Lewis Nathaniel - UI & UX Designer" width="57" height="57">
+					<div class="avatar__text">
+						<div class="avatar__header">Lewis<br>Nathaniel</div>
+						<div class="avatar__desc">UI & UX Designer</div>
+					</div>
 				</div>
+				<nav class="nav">				
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link nav__link--active" href="#">Work</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">About me</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+					</ul>
+					<button class="nav__button btn btn--little btn--light">Hire me</button>
+				</nav>
+			</div>			
+		</div>
+	</div>
+
+	<section class="first-screen">
+		<div class="container">
+			<div class="first-screen__inner">
+				<div class="first-screen__content">
+					<div class="first-screen__overhead">Hello I'm</div>
+					<h2 class="first-screen__title h2">Lewis Nathaniel</h2>
+					<div class="first-screen__subtitle">UI & UX Designer</div>
+					<div class="first-screen__social social social--color">
+						<a href="#" class="social__link social--color__link social__link--behance social--color__link--behance">behance</a>
+						<a href="#" class="social__link social--color__link social__link--dribbble social--color__link--dribbble">behance</a>
+						<a href="#" class="social__link social--color__link social__link--linkedin social--color__link--linkedin">linkedin</a>
+						<a href="#" class="social__link social--color__link social__link--facebook social--color__link--facebook">facebook</a>
+						<a href="#" class="social__link social--color__link social__link--instagram social--color__link--instagram">instagram</a>
+						<a href="#" class="social__link social--color__link social__link--twitter social--color__link--twitter">twitter</a>
+					</div>
+					<div class="first-screen__buttons">
+						<button class="btn btn--big btn--dark">Hire me</button>
+						<button class="btn btn--big btn--gray">See my resume</button>
+					</div>
+				</div>
+				<img class="first-screen__img" src="files/first_screen_photo.png" alt="Lewis Nathaniel - UI & UX Designer" width="368" height="493"></div>
 			</div>
-			<ul class="nav__list">
-				<li class="nav__item"><a class="nav__link" href="#">Work</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">About me</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-			</ul>
-			<button class="nav__button">Hire me</button>
-		</div>		
-	</nav>
+		</div>
+	</section>
+	
 </body>
 </html>
