@@ -1,0 +1,48 @@
+.about {
+	padding-top: 5.8rem;
+	padding-bottom: 9.33rem;
+	&__inner {
+		display: flex;
+		gap: 4rem;
+		position: relative;
+		&::before{
+			content: "";
+			position: absolute;
+			display: block;
+			width: 410px;
+			height: 415px;
+			background-color: @light-gray-bg;
+			left: 1.33rem;
+			bottom: 0;
+		}
+	}
+	&__photo {
+		position: relative;
+		z-index: 1;
+	}
+	&__content {
+		padding-top: 2.46rem;
+		max-width: 33.4rem;
+	}
+	&__title {
+	}
+	&__subtitle {
+		font-size: 6.13rem;
+		line-height: 1;
+		font-weight: 700;
+		color: @light-gray-text;
+		text-transform: uppercase;
+		margin-bottom: 2.6rem;
+	}
+	&__text {
+		font-size: 0.8rem;
+		line-height: 1.6rem;
+		font-weight: 300;
+		color: @dark-gray-text;
+	}
+	&__buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 3.8rem;
+	}
+}
