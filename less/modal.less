@@ -1,0 +1,30 @@
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	&__dialog {
+		background-color: @light-bg;
+		position: relative;
+	}
+	&__content {
+	}
+	&__close {
+		.fa-icon;
+		.fas;
+		font-size: 0;
+		position: absolute;
+		top:1rem;
+		right:1rem;
+		color: @dark-text;
+		&::before{
+			content: @fa-var-times-circle;
+			font-size: 2.4rem;
+		}
+	}
+}

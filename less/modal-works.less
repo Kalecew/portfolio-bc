@@ -1,0 +1,38 @@
+.modal-works {
+	&__list {
+	}
+	&__item {
+	}
+	&__card {
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		color: @gray-text;
+		position: absolute;
+		bottom: 1.4rem;
+		left: 1.4rem;
+		right: 1.4rem;		
+		font-weight: 700;
+	}
+	&__prev {	
+		text-transform: uppercase;			
+	}
+	&__next {		
+		text-transform: uppercase;
+	}
+	&__prev-icon {
+		.fa-icon;
+		.fas;
+		&::before{
+			content: @fa-var-chevron-left;
+		}
+	}
+	&__next-icon {
+		.fa-icon;
+		.fas;
+		&::before{
+			content: @fa-var-chevron-right;
+		}
+	}
+}

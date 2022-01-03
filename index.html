@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Portfolio</title>
 </head>
-<body>
+<body class="no-scroll">
 
 	<div class="header">
 		<div class="container">
@@ -362,5 +362,81 @@
 			</div>			
 		</div>
 	</footer>
+
+
+
+<!-- Модальное окно для портфолио -->
+	<div class="modal">
+		<div class="container">
+			<div class="modal__dialog">
+				<!-- Окно с работами -->
+				<div class="modal__content modal-works">
+					<ul class="modal-works__list">
+						<li class="modal-works__item">
+							<!-- Отдельная работа -->
+							<div class="modal-works__card card-modal-work">
+								<!-- Превьюшки для работы -->
+								<div class="card-modal-work__previews previews">
+									<ul class="previews__list">
+										<li class="previews__item">
+											<img class="previews__img" src="" alt="">
+										</li>
+									</ul>
+									<!-- Кружочки для слайдера с превьюхами -->
+									<div class="previews__circles slider-circles">
+										<ul class="slider-circles__list">
+											<li class="slider-circles__item">
+												<div class="slider-circles__elem"></div>
+												<div class="slider-circles__elem slider-circles__elem--active"></div>
+												<div class="slider-circles__elem"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Текстовое описание работы -->
+								<div class="card-modal-work__content">
+									<div class="card-modal-work__title">Project title</div>
+									<div class="card-modal-work__subtitle">
+										<div class="card-modal-work__category">Category</div>
+										<div class="card-modal-work__year">2018</div>
+									</div>
+									<div class="card-modal-work__client">
+										<div class="card-modal-work__client-caption">Client:</div>
+										<div class="card-modal-work__client-company">Creative Agency</div>
+									</div>
+									<div class="card-modal-work__description">
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.
+										</p>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.
+										</p>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.
+										</p>
+									</div>
+									<!-- Кнопки-переключатели работ -->
+									<div class="modal-works__buttons">
+										<button class="modal-works__prev">
+											<i class="modal-works__prev-icon"></i>
+											Previous
+										</button>
+										<button class="modal-works__next">
+											Next
+											<i class="modal-works__next-icon"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- Кнопка закрытия модального окна -->
+				<button class="modal__close" type="button">Close</button>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
