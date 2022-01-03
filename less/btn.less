@@ -17,7 +17,7 @@
 		min-width: 170px;
 	}
 	&--little{
-		padding: 0.8em 1.7em;
+		padding: 0.7em 1.7em;
 		border-width: 2px;
 		font-weight: 700;
 		font-size: 0.93rem;
@@ -51,6 +51,16 @@
 			background-color: @dark-btn-bg;
 			border-color: @dark-btn-border;
 			color: @light-text;
+		}
+	}
+	&--transparent{
+		background-color: transparent;
+		border-color: @gray-btn-border;
+		color: @dark-gray-text;
+		&:hover{
+			background-color: @light-btn-bg;
+			border-color: @transparent-btn-border-hover;
+			color: @dark-text;
 		}
 	}
 }

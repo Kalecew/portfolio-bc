@@ -1,27 +1,51 @@
 .nav {
 	display: flex;
-	gap: 2.66rem;
 	align-items: center;
 	&__list {
 		display: flex;
-		gap: 2.66rem;
 	}
 	&__item {
 	}
 	&__link {
-		text-transform: uppercase;
-		font-weight: 700;
+		
+		
 		font-size: 0.93rem;
-		color: @dark-text;
+		
 		border-bottom: 3px solid transparent;
 		border-top: 3px solid transparent;
-		&:hover {
-			border-bottom: 3px solid @dark-border;
-		}
+		
 		&--active{
 			border-bottom: 3px solid @dark-border;
 		}
 	}
 	&__button {
+	}
+	&--dark {
+		gap: 2.66rem;
+		&__list {
+			gap: 2.66rem;
+		}
+		&__link{
+			font-weight: 700;
+			color: @dark-text;
+			text-transform: uppercase;
+			&:hover {
+				border-bottom: 3px solid @dark-border;
+			}
+		}
+	}
+	&--gray {
+		gap: 1.2rem;
+		&__list {
+			gap: 1.2rem;
+		}
+		&__link{
+			font-weight: 400;
+			color: @light-text;
+			opacity: 0.4;
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 }
