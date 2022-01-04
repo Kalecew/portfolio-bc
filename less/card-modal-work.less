@@ -4,8 +4,11 @@
 		flex: 0 0 auto;
 	}
 	&__content {
-    	padding: 3.33rem 4.33rem 3.33rem 1.33rem;
+		width: 28rem;
+    	padding: 3.33rem 1.33rem 1.33rem 1.33rem;
     	position: relative;
+    	display: flex;
+    	flex-direction: column;
 	}
 	&__title {
 		text-transform: uppercase;
@@ -39,26 +42,18 @@
 			background-color: @silver-bg;
 		}
 	}
-	&__client {
-		margin-top: 2rem;
-	}
-	&__client-caption {
-		color: @dark-text;
-		font-weight: 700;
-		font-size: 1.06rem;
-		margin-bottom: 0.2rem;
-	}
-	&__client-company {
-		color: @gray-text;
-		font-size: 0.93rem;
-		font-style: italic;
-		font-weight: 300;
+	&__work-info {
 	}
 	&__description {
 		color: @gray-text;
 		font-size: 0.8rem;
 		margin-top: 2rem;
+		margin-bottom: 2rem;
 		line-height: 2;
 		font-weight: 300;
+		max-width: 21rem;
+	}
+	&__footer{
+		margin-top: auto;
 	}
 }

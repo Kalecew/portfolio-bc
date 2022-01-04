@@ -366,29 +366,32 @@
 
 
 <!-- Модальное окно для портфолио -->
-	<div class="modal">
-		<div class="container">
-			<div class="modal__dialog">
-				<!-- Окно с работами -->
-				<div class="modal__content modal-works">
-					<ul class="modal-works__list">
-						<li class="modal-works__item">
+	<div class="modal">			
+		<div class="modal__dialog">
+				<!-- Окно со слайдером работы -->
+				<div class="modal__content slider-works">
+					<ul class="slider-works__list">
+						<li class="slider-works__item">
 							<!-- Отдельная работа -->
-							<div class="modal-works__card card-modal-work">
+							<div class="slider-works__card card-modal-work">
 								<!-- Превьюшки для работы -->
-								<div class="card-modal-work__previews previews">
-									<ul class="previews__list">
-										<li class="previews__item">
-											<img class="previews__img" src="" alt="">
+								<div class="card-modal-work__previews slider-previews">
+									<ul class="slider-previews__list">
+										<li class="slider-previews__item">
+											<img class="slider-previews__img" src="" alt="">
 										</li>
 									</ul>
 									<!-- Кружочки для слайдера с превьюхами -->
-									<div class="previews__circles slider-circles">
-										<ul class="slider-circles__list">
-											<li class="slider-circles__item">
-												<div class="slider-circles__elem"></div>
-												<div class="slider-circles__elem slider-circles__elem--active"></div>
-												<div class="slider-circles__elem"></div>
+									<div class="slider-previews__circles circles-slider-previews">
+										<ul class="circles-slider-previews__list">
+											<li class="circles-slider-previews__item">
+												<div class="circles-slider-previews__elem"></div>
+											</li>
+											<li class="circles-slider-previews__item">
+												<div class="circles-slider-previews__elem circles-slider-previews__elem--active"></div>
+											</li>
+											<li class="circles-slider-previews__item">
+												<div class="circles-slider-previews__elem"></div>
 											</li>
 										</ul>
 									</div>
@@ -400,9 +403,13 @@
 										<div class="card-modal-work__category">Category</div>
 										<div class="card-modal-work__year">2018</div>
 									</div>
-									<div class="card-modal-work__client">
-										<div class="card-modal-work__client-caption">Client:</div>
-										<div class="card-modal-work__client-company">Creative Agency</div>
+									<div class="card-modal-work__info work-info">
+										<ul class="work-info__list">
+											<li class="work-info__item">
+												<div class="work-info__characteristic">Client:</div>
+												<div class="work-info__value">Creative Agency</div>
+											</li>
+										</ul>										
 									</div>
 									<div class="card-modal-work__description">
 										<p>
@@ -416,16 +423,18 @@
 										</p>
 									</div>
 									<!-- Кнопки-переключатели работ -->
-									<div class="modal-works__buttons">
-										<button class="modal-works__prev">
-											<i class="modal-works__prev-icon"></i>
-											Previous
-										</button>
-										<button class="modal-works__next">
-											Next
-											<i class="modal-works__next-icon"></i>
-										</button>
-									</div>
+									<div class="card-modal-work__footer">
+										<div class="slider-works__buttons">
+											<button class="slider-works__button">
+												<i class="slider-works__icon slider-works__icon--prev"></i>
+												Previous
+											</button>
+											<button class="slider-works__button">
+												Next
+												<i class="slider-works__icon slider-works__icon--next"></i>
+											</button>
+										</div>
+									</div>									
 								</div>
 							</div>
 						</li>
@@ -434,7 +443,7 @@
 				</div>
 				<!-- Кнопка закрытия модального окна -->
 				<button class="modal__close" type="button">Close</button>
-			</div>
+		
 		</div>
 	</div>
 

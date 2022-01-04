@@ -1,0 +1,31 @@
+.slider-works {
+	&__list {
+	}
+	&__item {
+	}
+	&__card {
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		color: @gray-text;
+		font-weight: 700;
+	}
+	&__button {	
+		text-transform: uppercase;			
+	}
+	&__icon {
+		.fa-icon;
+		.fas;
+		&--prev{
+			&::before{
+				content: @fa-var-chevron-left;
+			}
+		}
+		&--next{
+			&::before{
+				content: @fa-var-chevron-right;
+			}
+		}
+	}
+}
