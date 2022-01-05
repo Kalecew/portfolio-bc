@@ -1,0 +1,26 @@
+.timeline {
+	display: flex;
+	gap: 6rem;
+	position: relative;
+	max-width: 50rem;
+	&::before{
+		content: "";
+		position: absolute;
+		left: 50%;
+		width: 1px;
+		height: 100%;
+		background-color: @gray-bg;
+	}
+	&__left {
+		flex: 1 1 0;
+		& *{
+			text-align: right;
+		}
+	}
+	&__right {
+		flex: 1 1 0;
+	}
+	&__block {
+		
+	}	
+}

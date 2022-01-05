@@ -1,0 +1,39 @@
+.awards {
+	&__title {
+		margin-bottom: 2rem;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	&__item {
+		position: relative;
+		margin-left: 4rem;
+	}
+	&__date {
+		text-decoration: underline;
+		color: @dark-gray-text;
+		position: absolute;
+		left: -4rem;
+	}
+	&__name {
+		color: @dark-text;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 1.06rem;
+    	margin-bottom: 0.2rem;
+	}
+	&__presenting {
+		font-weight: 300;
+		font-style: italic;
+		color: @dark-gray-text;
+		font-size: .94rem;
+	}
+	&__description {
+		color: @dark-gray-text;
+		font-size: .8rem;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+}
