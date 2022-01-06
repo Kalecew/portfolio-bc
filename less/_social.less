@@ -1,14 +1,17 @@
 .social {	
-	&__list{
+	&__list {
 		display: flex;
 		gap: 0.8rem;
 	}
-	&__item{}
-	&__link{
+	&__item {
+	}
+	&__link {		
+		font-size: 0;	
+		position: relative;	
+	}	
+	&__icon {
 		.fa-icon;
-		.fab;
-		font-size: 0;
-		position: relative;
+		.fab;		
 		&:before {
 			position: absolute;
 			top: 50%;
@@ -45,18 +48,14 @@
 		    	content: @fa-var-twitter;
 			}
 		}
-	}	
+	}
 	&--color {
 		&__link{
 			width: 2.8rem;
 			height: 2.8rem;
 			&:hover{
 				opacity: 0.7;
-			}
-			&:before {
-				font-size: 1.5rem;
-				color: @light-text;
-			}
+			}			
 			&--behance {
 				background-color: @behance-bg;
 			}
@@ -76,6 +75,12 @@
 				background-color: @twitter-bg;
 			}
 		}
+		&__icon{
+			&:before {
+				font-size: 1.5rem;
+				color: @light-text;
+			}
+		}
 	}
 	&--gray {
 		&__link{
@@ -85,6 +90,12 @@
 			&:hover{
 				opacity: 1;
 			}
+			&:before {
+				font-size: 1.33rem;
+				color: @light-text;				
+			}
+		}
+		&__icon{
 			&:before {
 				font-size: 1.33rem;
 				color: @light-text;				
