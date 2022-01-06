@@ -1,0 +1,31 @@
+.form {
+	&__field {
+		margin-bottom: 1.8rem;
+	}
+	&__label {
+		font-size: .8rem;
+		color: @dark-text;
+		font-weight: 700;
+		margin-bottom: .4rem;
+	}
+	&__input {
+		width: 100%;
+		padding: 1.2rem 1.8rem;
+		font-size: .8rem;
+		font-weight: 400;
+		line-height: 1.2;
+		border: 1px solid @gray-border;
+		border-radius: .8rem;
+		transition: border-color .2s linear;
+		resize: none;
+		font-weight: 300;
+		color: @dark-text;
+		&:focus, &:active{
+			outline: none;
+			border-color: @dark-bg;
+		}
+	}
+	&__submit {
+		margin-left: auto;
+	}
+}

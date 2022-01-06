@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Portfolio</title>
 </head>
-<body class="no-scroll">
+<body>
 
 	<div class="header">
 		<div class="container">
@@ -367,7 +367,7 @@
 
 <!-- Модальное окно для портфолио -->
 	<div class="modal hidden">			
-		<div class="modal__dialog">
+		<div class="modal__dialog modal__dialog--full">
 				<!--Слайдер работ -->
 				<div class="modal__content slider-works">
 					<ul class="slider-works__list">
@@ -450,120 +450,166 @@
 
 
 <!-- Модальное окно для резюме -->
-	<div class="modal">			
-		<div class="modal__dialog">
-				<!-- Резюме -->
-				<div class="modal__content resume">
-					<h2 class="resume__title h2">Resume</h2>
-					<div class="resume__share-btns">
-						<button class="resume__download-btn btn btn--mini btn--gray" type="button">Download pdf</button>
-						<button class="resume__print-btn btn btn--mini btn--gray" type="button">Print</button>
-					</div>
-					<div class="resume__timeline timeline">
-						<div class="timeline__left">
-							<!-- Блок с опытом -->
-							<div class="timeline__block experience">
-								<h3 class="experience__title h3">Experience</h3>
-								<ul class="experience__list">
-									<li class="experience__item">
-										<div class="experience__date">2017 - <span class="experience__present">Present</span></div>
-										<div class="experience__job">Freelancer</div>
-										<div class="experience__position">Art Director</div>
-										<div class="experience__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur, corporis mollitia, ratione natus animi.</p></div>
-									</li>
-									<li class="experience__item">
-										<div class="experience__date">2016 - 2017</div>
-										<div class="experience__job">The Best Agency</div>
-										<div class="experience__position">Art Director</div>
-										<div class="experience__description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Atque similique quam laudantium labore porro laborum!</p></div>
-									</li>
-									<li class="experience__item">
-										<div class="experience__date">2014 - 2016</div>
-										<div class="experience__job">Better Agency</div>
-										<div class="experience__position">Senior UI/UX Designer</div>
-										<div class="experience__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam quos, in mollitia libero veniam?</p></div>
-									</li>
-									<li class="experience__item">
-										<div class="experience__date">2012 - 2014</div>
-										<div class="experience__job">Good Agency</div>
-										<div class="experience__position">UI/UX Designer</div>
-										<div class="experience__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime ipsum tenetur optio laboriosam minus.</p></div>
-									</li>
-								</ul>
-							</div>							
-						</div>
-						<div class="timeline__right">
-							<!-- Блок с образованием -->
-							<div class="timeline__block education">
-								<h3 class="education__title h3">Education</h3>
-								<ul class="education__list">
-									<li class="education__item">
-										<div class="education__date">2005 - 2010</div>
-										<div class="education__profession">UI/UX Design</div>
-										<div class="education__institution">LA University, USA</div>
-									</li>
-									<li class="education__item">
-										<div class="education__date">2002 - 2005</div>
-										<div class="education__profession">UI/UX Design</div>
-										<div class="education__institution">LA Collage of Art, USA</div>
-									</li>
-								</ul>
-							</div>
-							<!-- Блок с навыками -->
-							<div class="timeline__block skills">
-								<h3 class="skills__title h3">Skills</h3>
-								<ul class="skills__list">
-									<li class="skills__item">
-										<div class="skills__name">UI/UX Design</div>
-										<div class="skills__scale">
-											<div class="skills__progress" style="width: 90%"></div>
-										</div>
-									</li>
-									<li class="skills__item">
-										<div class="skills__name">Illustrator</div>
-										<div class="skills__scale">
-											<div class="skills__progress" style="width: 90%"></div>
-										</div>
-									</li>
-									<li class="skills__item">
-										<div class="skills__name">Photoshop</div>
-										<div class="skills__scale">
-											<div class="skills__progress" style="width: 90%"></div>
-										</div>
-									</li>
-									<li class="skills__item">
-										<div class="skills__name">Sketch</div>
-										<div class="skills__scale">
-											<div class="skills__progress" style="width: 90%"></div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- Блок с наградами -->
-							<div class="timeline__block awards">
-								<h3 class="awards__title h3">Awards</h3>
-								<ul class="awards__list">
-									<li class="awards__item">
-										<div class="awards__date">2016</div>
-										<div class="awards__name">The best app interface</div>
-										<div class="awards__presenting">UI/UX Magazine</div>
-										<div class="awards__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam nam, dolorum architecto iusto ullam?</p></div>
-									</li>
-									<li class="awards__item">
-										<div class="awards__date">2016</div>
-										<div class="awards__name">The best website</div>
-										<div class="awards__presenting">UI/UX Magazine</div>
-										<div class="awards__description"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id quidem blanditiis vel iste inventore!</p></div>
-									</li>
-								</ul>
-							</div>							
-						</div>
-					</div>
-					<button class="resume__hireme-btn btn btn--big btn--dark" type="button">Hire me</button>
+	<div class="modal hidden">			
+		<div class="modal__dialog modal__dialog--full">
+			<!-- Резюме -->
+			<div class="modal__content resume">
+				<h2 class="resume__title h2">Resume</h2>
+				<div class="resume__share-btns">
+					<button class="resume__download-btn btn btn--mini btn--gray" type="button">Download pdf</button>
+					<button class="resume__print-btn btn btn--mini btn--gray" type="button">Print</button>
 				</div>
-				<!-- Кнопка закрытия модального окна -->
-				<button class="modal__close" type="button">Close</button>
-		
+				<div class="resume__timeline timeline">
+					<div class="timeline__left">
+						<!-- Блок с опытом -->
+						<div class="timeline__block experience">
+							<h3 class="experience__title h3">Experience</h3>
+							<ul class="experience__list">
+								<li class="experience__item">
+									<div class="experience__date">2017 - <span class="experience__present">Present</span></div>
+									<div class="experience__job">Freelancer</div>
+									<div class="experience__position">Art Director</div>
+									<div class="experience__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur, corporis mollitia, ratione natus animi.</p></div>
+								</li>
+								<li class="experience__item">
+									<div class="experience__date">2016 - 2017</div>
+									<div class="experience__job">The Best Agency</div>
+									<div class="experience__position">Art Director</div>
+									<div class="experience__description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Atque similique quam laudantium labore porro laborum!</p></div>
+								</li>
+								<li class="experience__item">
+									<div class="experience__date">2014 - 2016</div>
+									<div class="experience__job">Better Agency</div>
+									<div class="experience__position">Senior UI/UX Designer</div>
+									<div class="experience__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam quos, in mollitia libero veniam?</p></div>
+								</li>
+								<li class="experience__item">
+									<div class="experience__date">2012 - 2014</div>
+									<div class="experience__job">Good Agency</div>
+									<div class="experience__position">UI/UX Designer</div>
+									<div class="experience__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime ipsum tenetur optio laboriosam minus.</p></div>
+								</li>
+							</ul>
+						</div>							
+					</div>
+					<div class="timeline__right">
+						<!-- Блок с образованием -->
+						<div class="timeline__block education">
+							<h3 class="education__title h3">Education</h3>
+							<ul class="education__list">
+								<li class="education__item">
+									<div class="education__date">2005 - 2010</div>
+									<div class="education__profession">UI/UX Design</div>
+									<div class="education__institution">LA University, USA</div>
+								</li>
+								<li class="education__item">
+									<div class="education__date">2002 - 2005</div>
+									<div class="education__profession">UI/UX Design</div>
+									<div class="education__institution">LA Collage of Art, USA</div>
+								</li>
+							</ul>
+						</div>
+						<!-- Блок с навыками -->
+						<div class="timeline__block skills">
+							<h3 class="skills__title h3">Skills</h3>
+							<ul class="skills__list">
+								<li class="skills__item">
+									<div class="skills__name">UI/UX Design</div>
+									<div class="skills__scale">
+										<div class="skills__progress" style="width: 90%"></div>
+									</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__name">Illustrator</div>
+									<div class="skills__scale">
+										<div class="skills__progress" style="width: 90%"></div>
+									</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__name">Photoshop</div>
+									<div class="skills__scale">
+										<div class="skills__progress" style="width: 90%"></div>
+									</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__name">Sketch</div>
+									<div class="skills__scale">
+										<div class="skills__progress" style="width: 90%"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- Блок с наградами -->
+						<div class="timeline__block awards">
+							<h3 class="awards__title h3">Awards</h3>
+							<ul class="awards__list">
+								<li class="awards__item">
+									<div class="awards__date">2016</div>
+									<div class="awards__name">The best app interface</div>
+									<div class="awards__presenting">UI/UX Magazine</div>
+									<div class="awards__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam nam, dolorum architecto iusto ullam?</p></div>
+								</li>
+								<li class="awards__item">
+									<div class="awards__date">2016</div>
+									<div class="awards__name">The best website</div>
+									<div class="awards__presenting">UI/UX Magazine</div>
+									<div class="awards__description"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id quidem blanditiis vel iste inventore!</p></div>
+								</li>
+							</ul>
+						</div>							
+					</div>
+				</div>
+				<button class="resume__hireme-btn btn btn--big btn--dark" type="button">Hire me</button>
+			</div>
+			<!-- Кнопка закрытия модального окна -->
+			<button class="modal__close" type="button">Close</button>
+		</div>
+	</div>
+
+
+<!-- Модальное окно для обратной связи -->
+	<div class="modal hidden">			
+		<div class="modal__dialog modal__dialog--mini">
+			<!-- Обратная связь -->
+			<div class="modal__content contact">
+				<div class="contact__left">
+					<div class="contact__header">
+						<h2 class="contact__title h2">Let's talk!</h2>
+						<div class="contact__subtitle">Call me or send me a request</div>
+					</div>					
+					<div class="contact__info info-contact">
+						<ul class="info-contact__list">
+							<li class="info-contact__item">
+								<i class="info-contact__icon info-contact__icon--phone"></i>
+								<a class="info-contact__link" href="tel:2001003000">									
+									(200) 100 3000
+								</a>
+							</li>
+							<li class="info-contact__item">
+								<i class="info-contact__icon info-contact__icon--mail"></i>
+								<a class="info-contact__link" href="mailto:designer@ui.com">									
+									designer@ui.com
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form class="contact__form form">
+						<div class="form__field">
+							<label class="form__label" for="email">Address e-mail</label>	
+							<input type="text" class="form__input" placeholder="Address e-mail" id="email">			
+						</div>
+						<div class="form__field">			
+							<label class="form__label" for="request">Request</label>
+							<textarea class="form__input" placeholder="Type your request..." id="request" rows="10"></textarea>
+						</div>
+						<button class="form__submit btn btn--big btn--dark" type="submit">Send</button>						
+					</form>
+				</div>
+				<div class="contact__right">
+				</div>
+			</div>
+			<!-- Кнопка закрытия модального окна -->
+			<button class="modal__close" type="button">Close</button>			
 		</div>
 	</div>
 </body>
