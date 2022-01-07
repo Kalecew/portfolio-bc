@@ -1,17 +1,17 @@
-.circles-slider-previews {
-	&__list {
-		display: flex;
-		gap: 0.6rem;
-	}
-	&__item {
-	}
-	&__elem {
-		width: 0.8rem;
-		height: 0.8rem;
-		border-radius: 0.5rem;
-		border: 2px solid @gray-border;
-		&--active {
-			background-color: @light-bg;
-		}
-	}
+.slick-dots {
+	display: flex;
+	gap: 0.6rem;
+	position: absolute;
+	bottom: 1.4rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+[role="presentation"]{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.5rem;
+	border: 2px solid @gray-border;
+}
+.slick-active{
+	background-color: @light-bg;
 }

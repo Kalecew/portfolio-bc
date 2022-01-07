@@ -1,20 +1,16 @@
 .slider-previews {
-	position: relative;
-	&__list {
-		height: 100%;
-	}
-	&__item {
+	background-color: @dark-bg;
+	display: flex;
+	align-items: center;
+	&__list{
 		width: 50rem;
-		min-height: 50rem;
-		height: 100%;
 		background-color: @gray-bg;
 	}
-	&__img {
+	&__item {
+		height: 37rem;
+		overflow: hidden;
 	}
-	&__circles {
-		position: absolute;
-		bottom: 1rem;
-		left: 50%;
-		transform: translateX(-50%);
+	&__img {
+		width: 100%;
 	}
 }

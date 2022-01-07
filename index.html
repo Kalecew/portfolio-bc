@@ -411,25 +411,15 @@
 							<!-- Отдельная работа -->
 							<div class="slider-works__card card-modal-work">
 								<!-- Превьюшки для работы -->
+								<!-- https://kenwheeler.github.io/slick/ -->
 								<div class="card-modal-work__previews slider-previews">
-									<ul class="slider-previews__list">
-										<li class="slider-previews__item">
-											<img class="slider-previews__img" src="" alt="">
-										</li>
-									</ul>
-									<!-- Кружочки для слайдера с превьюхами -->
-									<div class="slider-previews__circles circles-slider-previews">
-										<ul class="circles-slider-previews__list">
-											<li class="circles-slider-previews__item">
-												<div class="circles-slider-previews__elem"></div>
-											</li>
-											<li class="circles-slider-previews__item">
-												<div class="circles-slider-previews__elem circles-slider-previews__elem--active"></div>
-											</li>
-											<li class="circles-slider-previews__item">
-												<div class="circles-slider-previews__elem"></div>
-											</li>
-										</ul>
+									<div class="slider-previews__list" id="slick-previews">									
+										<div class="slider-previews__item">
+											<img class="slider-previews__img" src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image1" alt="placeholder+image">
+										</div>
+										<div class="slider-previews__item">
+											<img class="slider-previews__img" src="http://dummyimage.com/600x800/4d494d/686a82.gif&text=placeholder+image2" alt="placeholder+image">
+										</div>
 									</div>
 								</div>
 								<!-- Текстовое описание работы -->
@@ -650,8 +640,10 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/filter.js"></script>
-	<script type="text/javascript" src="js/openModal.js"></script>
-	<script type="text/javascript" src="js/closeModal.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/filter.js"></script>
+	<script src="js/openModal.js"></script>
+	<script src="js/closeModal.js"></script>
+	<script src="js/slick.js"></script>
 </body>
 </html>
