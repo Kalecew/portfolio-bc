@@ -14,11 +14,16 @@
 		position: relative;
 		margin: auto;
 		width: 100%;
+		transform: rotateX(90deg);
+		transition: transform .2s linear;
 		&--full {
 			max-width: @content-max-width;
 		}
 		&--mini {
 			max-width: 60rem;
+		}
+		&--expand{
+			transform: rotateX(0deg);
 		}
 	}
 	&__content {

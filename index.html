@@ -25,7 +25,7 @@
 						<li class="nav__item"><a class="nav__link nav--dark__link" href="#">Blog</a></li>
 						<li class="nav__item"><a class="nav__link nav--dark__link" href="#">Contact</a></li>
 					</ul>
-					<button class="nav__button btn btn--little btn--light">Hire me</button>
+					<button class="nav__button btn btn--little btn--light" data-open-modal="#hireme">Hire me</button>
 				</nav>
 			</div>			
 		</div>
@@ -79,8 +79,8 @@
 						</ul>						
 					</div>
 					<div class="first-screen__buttons">
-						<button class="btn btn--big btn--dark">Hire me</button>
-						<button class="btn btn--big btn--gray">See my resume</button>
+						<button class="btn btn--big btn--dark" data-open-modal="#hireme">Hire me</button>
+						<button class="btn btn--big btn--gray" data-open-modal="#resume">See my resume</button>
 					</div>
 				</div>
 				<img class="first-screen__img" src="files/first_screen_photo.png" alt="Lewis Nathaniel - UI & UX Designer" width="368" height="493"></div>
@@ -102,7 +102,7 @@
 			<div class="works__content">
 				<ul class="works__list">
 					<li class="works__item" data-category="interaction">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="1">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -113,10 +113,10 @@
 									</div>
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="website">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="2">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -127,10 +127,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="interaction">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="3">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -141,10 +141,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="app">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="4">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -155,10 +155,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="app">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="5">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -169,10 +169,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="website">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="6">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -183,10 +183,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="website">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="7">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -197,10 +197,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="website">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="8">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -211,10 +211,10 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 					<li class="works__item" data-category="app">
-						<a href="#" class="works__link">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="9">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -225,7 +225,7 @@
 									</div>									
 								</div>
 							</div>
-						</a>
+						</button>
 					</li>
 				</ul>
 				<button class="works__more-btn btn btn--little btn--light" type="button">Load more work</button>
@@ -246,8 +246,8 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem enim eius impedit quis molestiae id tempora, commodi repudiandae numquam non aliquid totam similique nobis repellendus.</p>
 					</div>
 					<div class="about__buttons">
-						<button class="btn btn--big btn--dark">Hire me</button>
-						<button class="btn btn--big btn--gray">See my resume</button>
+						<button class="btn btn--big btn--dark" data-open-modal="#hireme">Hire me</button>
+						<button class="btn btn--big btn--gray" data-open-modal="#resume">See my resume</button>
 					</div>
 				</div>
 			</div>
@@ -392,7 +392,7 @@
 							<li class="nav__item"><a class="nav__link nav--gray__link" href="#">Blog</a></li>
 							<li class="nav__item"><a class="nav__link nav--gray__link" href="#">Contact</a></li>
 						</ul>
-						<button class="nav__button btn btn--little btn--transparent">Hire me</button>
+						<button class="nav__button btn btn--little btn--transparent" data-open-modal="#hireme">Hire me</button>
 					</div>	
 				</div>
 			</div>			
@@ -402,8 +402,8 @@
 
 
 <!-- Модальное окно для портфолио -->
-	<div class="modal hidden">			
-		<div class="modal__dialog modal__dialog--full">
+	<div class="modal hidden" id="portfolio" data-modal>			
+		<div class="modal__dialog modal__dialog--full" data-modal-dialog>
 				<!--Слайдер работ -->
 				<div class="modal__content slider-works">
 					<ul class="slider-works__list">
@@ -478,7 +478,7 @@
 					
 				</div>
 				<!-- Кнопка закрытия модального окна -->
-				<button class="modal__close" type="button">Close</button>
+				<button class="modal__close" type="button" data-close>Close</button>
 		
 		</div>
 	</div>
@@ -486,8 +486,8 @@
 
 
 <!-- Модальное окно для резюме -->
-	<div class="modal hidden">			
-		<div class="modal__dialog modal__dialog--full">
+	<div class="modal hidden" id="resume" data-modal>			
+		<div class="modal__dialog modal__dialog--full" data-modal-dialog>
 			<!-- Резюме -->
 			<div class="modal__content resume">
 				<h2 class="resume__title h2">Resume</h2>
@@ -598,14 +598,14 @@
 				<button class="resume__hireme-btn btn btn--big btn--dark" type="button">Hire me</button>
 			</div>
 			<!-- Кнопка закрытия модального окна -->
-			<button class="modal__close" type="button">Close</button>
+			<button class="modal__close" type="button" data-close>Close</button>
 		</div>
 	</div>
 
 
 <!-- Модальное окно для обратной связи -->
-	<div class="modal hidden">			
-		<div class="modal__dialog modal__dialog--mini">
+	<div class="modal hidden" id="hireme" data-modal>			
+		<div class="modal__dialog modal__dialog--mini" data-modal-dialog>
 			<!-- Обратная связь -->
 			<div class="modal__content contact">
 				<div class="contact__left">
@@ -645,11 +645,13 @@
 				</div>
 			</div>
 			<!-- Кнопка закрытия модального окна -->
-			<button class="modal__close" type="button">Close</button>			
+			<button class="modal__close" type="button" data-close>Close</button>			
 		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/openModal.js"></script>
+	<script type="text/javascript" src="js/closeModal.js"></script>
 </body>
 </html>
