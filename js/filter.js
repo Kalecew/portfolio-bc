@@ -1,7 +1,6 @@
-$(function(){
-	const filterBtns = $('[data-filter]')
-	const worksItems = $('[data-category]')
-	const updateWorksList = function() {
+$(function(){	
+	$('[data-filter]').click(function() {
+		const worksItems = $('[data-category]')
 		const filter = $(this).data('filter')
 		if (filter == "all") worksItems.removeClass('hidden')
 		else{
@@ -11,6 +10,5 @@ $(function(){
 				else $(this).addClass('hidden')
 			})
 		}		
-	}
-	filterBtns.click(updateWorksList)
+	})
 })
