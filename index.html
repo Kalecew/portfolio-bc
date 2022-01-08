@@ -102,7 +102,7 @@
 			<div class="works__content">
 				<ul class="works__list">
 					<li class="works__item" data-category="interaction">
-						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="1">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="0">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -116,7 +116,7 @@
 						</button>
 					</li>
 					<li class="works__item" data-category="website">
-						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="2">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="1">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -130,11 +130,25 @@
 						</button>
 					</li>
 					<li class="works__item" data-category="interaction">
-						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="3">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="2">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
 									<div class="card-work__category">Interaction</div>
+									<div class="card-work__title-wrap">
+										<div class="card-work__title">Project title</div>
+										<time class="card-work__year" datetime="2018-12-12 12:12">2018</time>
+									</div>									
+								</div>
+							</div>
+						</button>
+					</li>
+					<li class="works__item" data-category="app">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="3">
+							<div class="works__card card-work">
+								<img class="card-work__img" src="" alt="Project title">
+								<div class="card-work__text">
+									<div class="card-work__category">App</div>
 									<div class="card-work__title-wrap">
 										<div class="card-work__title">Project title</div>
 										<time class="card-work__year" datetime="2018-12-12 12:12">2018</time>
@@ -157,12 +171,12 @@
 							</div>
 						</button>
 					</li>
-					<li class="works__item" data-category="app">
+					<li class="works__item" data-category="website">
 						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="5">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
-									<div class="card-work__category">App</div>
+									<div class="card-work__category">Website</div>
 									<div class="card-work__title-wrap">
 										<div class="card-work__title">Project title</div>
 										<time class="card-work__year" datetime="2018-12-12 12:12">2018</time>
@@ -199,22 +213,8 @@
 							</div>
 						</button>
 					</li>
-					<li class="works__item" data-category="website">
-						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="8">
-							<div class="works__card card-work">
-								<img class="card-work__img" src="" alt="Project title">
-								<div class="card-work__text">
-									<div class="card-work__category">Website</div>
-									<div class="card-work__title-wrap">
-										<div class="card-work__title">Project title</div>
-										<time class="card-work__year" datetime="2018-12-12 12:12">2018</time>
-									</div>									
-								</div>
-							</div>
-						</button>
-					</li>
 					<li class="works__item" data-category="app">
-						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="9">
+						<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="8">
 							<div class="works__card card-work">
 								<img class="card-work__img" src="" alt="Project title">
 								<div class="card-work__text">
@@ -406,14 +406,14 @@
 		<div class="modal__dialog modal__dialog--full" data-modal-dialog>
 				<!--Слайдер работ -->
 				<div class="modal__content slider-works">
-					<ul class="slider-works__list">
-						<li class="slider-works__item">
+					<div class="slider-works__list" id="slick-works">
+						<div class="slider-works__item">
 							<!-- Отдельная работа -->
 							<div class="slider-works__card card-modal-work">
 								<!-- Превьюшки для работы -->
 								<!-- https://kenwheeler.github.io/slick/ -->
 								<div class="card-modal-work__previews slider-previews">
-									<div class="slider-previews__list" id="slick-previews">									
+									<div class="slider-previews__list" data-slick-previews>									
 										<div class="slider-previews__item">
 											<img class="slider-previews__img" src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image1" alt="placeholder+image">
 										</div>
@@ -451,11 +451,11 @@
 									<!-- Кнопки-переключатели работ -->
 									<div class="card-modal-work__footer">
 										<div class="slider-works__buttons">
-											<button class="slider-works__button">
+											<button class="slider-works__button" data-slick-works-prev>
 												<i class="slider-works__icon slider-works__icon--prev"></i>
 												Previous
 											</button>
-											<button class="slider-works__button">
+											<button class="slider-works__button" data-slick-works-next>
 												Next
 												<i class="slider-works__icon slider-works__icon--next"></i>
 											</button>
@@ -463,8 +463,65 @@
 									</div>									
 								</div>
 							</div>
-						</li>
-					</ul>
+						</div>
+						<div class="slider-works__item">
+							<!-- Отдельная работа -->
+							<div class="slider-works__card card-modal-work">
+								<!-- Превьюшки для работы -->
+								<!-- https://kenwheeler.github.io/slick/ -->
+								<div class="card-modal-work__previews slider-previews">
+									<div class="slider-previews__list" data-slick-previews>									
+										<div class="slider-previews__item">
+											<img class="slider-previews__img" src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image1" alt="placeholder+image">
+										</div>
+										<div class="slider-previews__item">
+											<img class="slider-previews__img" src="http://dummyimage.com/600x800/4d494d/686a82.gif&text=placeholder+image2" alt="placeholder+image">
+										</div>
+									</div>
+								</div>
+								<!-- Текстовое описание работы -->
+								<div class="card-modal-work__content">
+									<div class="card-modal-work__title">Project title2</div>
+									<div class="card-modal-work__subtitle">
+										<div class="card-modal-work__category">Category</div>
+										<div class="card-modal-work__year">2018</div>
+									</div>
+									<div class="card-modal-work__info work-info">
+										<ul class="work-info__list">
+											<li class="work-info__item">
+												<div class="work-info__characteristic">Client:</div>
+												<div class="work-info__value">Creative Agency</div>
+											</li>
+										</ul>										
+									</div>
+									<div class="card-modal-work__description">
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.
+										</p>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.
+										</p>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.
+										</p>
+									</div>
+									<!-- Кнопки-переключатели работ -->
+									<div class="card-modal-work__footer">
+										<div class="slider-works__buttons">
+											<button class="slider-works__button" data-slick-works-prev>
+												<i class="slider-works__icon slider-works__icon--prev"></i>
+												Previous
+											</button>
+											<button class="slider-works__button" data-slick-works-next>
+												Next
+												<i class="slider-works__icon slider-works__icon--next"></i>
+											</button>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
 					
 				</div>
 				<!-- Кнопка закрытия модального окна -->
