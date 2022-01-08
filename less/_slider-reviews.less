@@ -1,5 +1,15 @@
 .slider-reviews {
 	height: 15.33rem;
+	&__list {
+		height: 26.66rem;
+		//зависимость от родителя, элемент не мой
+		& .slick-list{
+			height: 100%;
+		}
+	}
+	&__item {
+		background-color: transparent !important;
+	}
 	&__review {
 		width: 55rem;
     	margin: 0 auto;
@@ -7,7 +17,7 @@
     	height: 100%;
     	display: flex;
     	align-items: center;
-    	padding: 3.5rem 0;
+    	padding: 3.5rem 0;    	
 	}
 	&__text {
 		font-size: 0.93rem;
@@ -27,7 +37,7 @@
 		position: absolute;
 		top: 100%;
 		left: 50%;
-		transform: translate(-50%, -51px);
+		transform: translate(-50%, -2.66rem);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
