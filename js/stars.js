@@ -5,7 +5,6 @@ $(function(){
 		const overlayStars = $('[data-stars-overlay',parent)
 		const overlayWidth = rate * 100 / 5;
 		overlayStars.css("width",overlayWidth+"%")
-		console.log(parent)
 	})
 	
 })
