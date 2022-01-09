@@ -1,8 +1,11 @@
 $(function(){	
 	$('[data-filter]').click(function() {
 		const worksItems = $('[data-category]')
+		const filerItems = $('[data-filter]')
 		const filter = $(this).data('filter')
-		if (filter == "all") worksItems.removeClass('hidden')
+		filerItems.removeClass('filter__button--active')
+		$(this).addClass('filter__button--active')
+		if (filter == "All") worksItems.removeClass('hidden')
 		else{
 			worksItems.each(function() {
 				const category = $(this).data('category')				
