@@ -3,9 +3,14 @@
 		display: flex;
 		border-bottom: 1px solid @gray-border;
 		background: url("../img/first_screen_bg.png") right bottom no-repeat;
+		background-size: cover;
+		align-items: stretch;
+		@media @tablet {
+			background: none;
+		}
 	}
 	&__content {
-		flex: 1 1 0;
+		flex: 1 1 26.26rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -37,10 +42,22 @@
 		display: flex;
 		gap: 1rem;
 		margin-top: 2.8rem;
+		@media @mobile {
+			flex-direction: column;
+    		width: 100%;
+		}
 	}
-	&__img {
-		flex: 0 0 0;
+	&__img-wrap {
+		flex: 0 1 24.53rem;
 		margin-right: 5.33rem;
+		align-self: flex-end;
+		@media @tablet {
+			display: none;
+		}
+	}
+	&__img{
+		width: 100%;
+		height: auto;
 	}
 }
 

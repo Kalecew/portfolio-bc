@@ -6,6 +6,9 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	color: @dark-gray-text;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	&.no-scroll{
 		overflow: hidden;
 	}
@@ -24,6 +27,9 @@ p{
 	font-weight: 700;
 	color: @dark-text;
 	text-transform: uppercase;
+	@media @mobile {
+		font-size: 2rem;
+	}
 }
 .h3{
 	text-transform: uppercase;
