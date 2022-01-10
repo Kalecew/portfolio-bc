@@ -1,0 +1,12 @@
+$(function(){
+	$('#burger').click(function(){
+		$(this).toggleClass('burger--active')
+		$(this).children().toggleClass('burger--active__line')
+		$('#nav').toggleClass('nav--active')
+	})
+	$('[data-nav-tablet-link]').click(function(){
+		$('#burger').removeClass('burger--active')
+		$('#burger').children().removeClass('burger--active__line')
+		$('#nav').removeClass('nav--active')
+	})
+})

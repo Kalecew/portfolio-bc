@@ -1,8 +1,8 @@
 .nav {
 	display: flex;
-	align-items: center;
+	align-items: center;	
 	&__list {
-		display: flex;
+		display: flex;		
 	}
 	&__item {
 	}
@@ -13,10 +13,28 @@
 	}
 	&__button {
 	}
-	&--dark {
+	&--header {
 		gap: 2.66rem;
+		@media @tablet {
+			height: 0;
+			padding: 0 3rem;
+			overflow: hidden;
+			flex-direction: column;	
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			background-color: @light-bg;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, .25);	
+			z-index: 1;
+			transition: padding .2s linear;
+		}
 		&__list {
 			gap: 2.66rem;
+			@media @tablet {
+				flex-direction: column;		
+				align-items: center;
+			}
 		}
 		&__link{
 			font-weight: 700;
@@ -27,7 +45,7 @@
 			}
 		}
 	}
-	&--gray {
+	&--footer {
 		gap: 1.2rem;
 		&__list {
 			gap: 1.2rem;
@@ -41,4 +59,12 @@
 			}
 		}
 	}
+	&--active{
+		@media @tablet {
+			height: auto;
+			padding: 3rem;
+		}
+	}
+
+	
 }

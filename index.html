@@ -18,15 +18,26 @@
 						<div class="avatar__desc">UI & UX Designer</div>
 					</div>
 				</div>
-				<nav class="header__nav nav nav--dark">				
-					<ul class="nav__list nav--dark__list">
-						<li class="nav__item"><a class="nav__link nav--dark__link" href="#work">Work</a></li>
-						<li class="nav__item"><a class="nav__link nav--dark__link" href="#about">About me</a></li>
-						<li class="nav__item"><a class="nav__link nav--dark__link" href="#blog">Blog</a></li>
-						<li class="nav__item"><a class="nav__link nav--dark__link" href="#" data-open-modal="#hireme">Contact</a></li>
+				<nav class="header__nav nav nav--header" id="nav">				
+					<ul class="nav__list nav--header__list">
+						<li class="nav__item">
+							<a class="nav__link nav--header__link" data-nav-tablet-link href="#work">Work</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav--header__link" data-nav-tablet-link href="#about">About me</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav--header__link" data-nav-tablet-link href="#blog">Blog</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav--header__link" data-nav-tablet-link href="#" data-open-modal="#hireme">Contact</a>
+						</li>
 					</ul>
 					<button class="nav__button btn btn--little btn--light" data-open-modal="#hireme">Hire me</button>
 				</nav>
+				<button class="header__burger burger" type="button" id="burger">
+					<div class="burger__line"></div>
+				</button>
 			</div>			
 		</div>
 	</div>
@@ -296,12 +307,12 @@
 					</div>
 				</div>
 				<div class="footer__right">
-					<div class="footer__nav nav nav--gray">				
-						<ul class="nav__list  nav--gray__list">
-							<li class="nav__item"><a class="nav__link nav--gray__link" href="#work">Work</a></li>
-							<li class="nav__item"><a class="nav__link nav--gray__link" href="#about">About me</a></li>
-							<li class="nav__item"><a class="nav__link nav--gray__link" href="#blog">Blog</a></li>
-							<li class="nav__item"><a class="nav__link nav--gray__link" href="#" data-open-modal="#hireme">Contact</a></li>
+					<div class="footer__nav nav nav--footer">				
+						<ul class="nav__list  nav--footer__list">
+							<li class="nav__item"><a class="nav__link nav--footer__link" href="#work">Work</a></li>
+							<li class="nav__item"><a class="nav__link nav--footer__link" href="#about">About me</a></li>
+							<li class="nav__item"><a class="nav__link nav--footer__link" href="#blog">Blog</a></li>
+							<li class="nav__item"><a class="nav__link nav--footer__link" href="#" data-open-modal="#hireme">Contact</a></li>
 						</ul>
 						<button class="nav__button btn btn--little btn--transparent" data-open-modal="#hireme">Hire me</button>
 					</div>	
@@ -502,5 +513,6 @@
 	<script src="js/stars.js"></script>
 	<script src="js/print.js"></script>	
 	<script src="js/closeModal.js"></script>
+	<script src="js/nav.js"></script>
 </body>
 </html>
