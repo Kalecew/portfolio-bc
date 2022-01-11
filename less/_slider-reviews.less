@@ -1,8 +1,26 @@
 .slider-reviews {
 	height: 15.33rem;
+	@media @tablet {
+		height: 17.33rem;
+	}
+	@media @mobile {
+		height: 18.33rem;
+	}
+	@media @iphone {
+		height: 21.33rem;
+	}
 	&__list {
 		height: 26.66rem;
 		//зависимость от родителя, элемент не мой
+		@media @tablet {
+			height: 28.66rem;
+		}
+		@media @mobile {
+			height: 30.66rem;
+		}
+		@media @iphone {
+			height: 32.66rem;
+		}
 		& .slick-list{
 			height: 100%;
 		}
@@ -10,15 +28,30 @@
 	&__item {
 		background-color: transparent !important;
 		height: 15.33rem;
+		@media @tablet {
+			height: 17.33rem;
+		}
+		@media @mobile {
+			height: 18.33rem;
+		}
+		@media @iphone {
+			height: 21.33rem;
+		}
 	}
 	&__review {
-		width: 55rem;
+		max-width: 55rem;
     	margin: 0 auto;
     	position: relative;    	
     	height: 100%;
     	display: flex;
     	align-items: center;
-    	padding: 3.5rem 0;    	
+    	padding: 3.5rem 0;
+    	@media @laptop {
+    	    padding: 1.5rem 0 3.5rem;	
+    	}   
+    	@media @tablet {
+    	    padding: .7rem 0 3.5rem;	
+    	}    	
 	}
 	&__text {
 		font-size: 0.93rem;
@@ -28,7 +61,10 @@
 		color: @light-text;
 		text-align: center;
 		max-height: 100%;
-		overflow: hidden;
+		overflow: hidden; 
+		@media @tablet {
+			line-height: 1.5rem;
+		}
 	}
 	&__p{
 		height: 100%;
@@ -55,6 +91,7 @@
 		line-height: 2.13rem;
 		font-weight: 700;
 		color: @dark-text;
+		white-space: nowrap;
 	}
 	&__company {
 		font-size: 0.93rem;
