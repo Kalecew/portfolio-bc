@@ -5,26 +5,44 @@
 		display: flex;
 		gap: 4rem;
 		position: relative;
+		@media @laptop {
+			gap: 2rem;
+		}
+	}
+	&__photo-wrap {
+		display: flex;
+		align-items: flex-end;
 		&::before{
 			content: "";
 			position: absolute;
 			display: block;
 			width: 410px;
-			height: 415px;
+			height: 410px;
 			background-color: @light-gray-bg;
 			left: 1.33rem;
 			bottom: 0;
+			@media @laptop {
+				width: 230px;
+				height: 230px;
+			}
+			@media @tablet {
+				width: 200px;
+				height: 200px;
+			}
 		}
 	}
 	&__photo {
 		position: relative;
-		z-index: 1;
+		width: 100%;
+		height: auto;
 	}
 	&__content {
 		padding-top: 2.46rem;
 		max-width: 33.4rem;
+		flex: 1 1 auto;
 	}
 	&__title {
+		
 	}
 	&__subtitle {
 		font-size: 6.13rem;
@@ -33,6 +51,9 @@
 		color: @light-gray-text;
 		text-transform: uppercase;
 		margin-bottom: 2.6rem;
+		@media @laptop-m {
+			font-size: 5rem;
+		}
 	}
 	&__text {
 		font-size: 0.8rem;
