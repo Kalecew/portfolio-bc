@@ -7,8 +7,14 @@
 	}
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(3,370px);
+		grid-template-columns: repeat(3,minmax(220px,370px));
 		gap: 2rem;
+		@media @tablet {
+			grid-template-columns: repeat(2,minmax(150px,350px));
+		}
+		@media @mobile {
+			grid-template-columns: repeat(1,minmax(220px,370px));
+		}
 	}
 	&__item {
 	}
