@@ -14,13 +14,19 @@
 		line-height: 2.13rem;
 		font-weight: 300;
 		color: @dark-gray-text;
+		text-align: center;
 	}
 	&__content {
 	}
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(17.13rem, 1fr));
-		grid-column-gap: 2rem;
+		// grid-template-columns: repeat(3, minmax(17.13rem, 1fr));
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		@media @laptop {
+			grid-template-columns: repeat(1, 1fr);		
+			gap: 3rem;
+		}
 	}
 	&__item {
 	}
