@@ -6,7 +6,6 @@
 		padding-bottom: 5.33rem;
 	}	
 	@media @tablet {
-		padding-top: 0.8rem;
 		padding-bottom: 3.33rem;
 	}	
 	&__inner {
@@ -63,8 +62,11 @@
 		padding-top: 2.46rem;
 		max-width: 33.4rem;
 		flex: 1 2 auto;
+		@media @laptop {
+			padding-top: 0;
+		}
 		@media @tablet {
-			max-width: none;
+			max-width: none;			
 		}
 	}
 	&__title {
