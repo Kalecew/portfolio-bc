@@ -5,17 +5,25 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0.8rem 0;
+		padding: .8rem 0;
+		flex-wrap: wrap;
+		gap: 1rem;
+		@media @laptop {
+			flex-direction: column-reverse;
+		}
 	}
 	&__left {
 		display: flex;
 		align-items: center;
 		gap: 2rem;
+		margin: .5rem 0;
+		flex-wrap: wrap-reverse;
+    	justify-content: center;
 	}
 	&__right {
 	}
 	&__copyright {
-		font-size: 0.93rem;
+		font-size: .93rem;
 		line-height: 1.2;
 		font-weight: 400;
 		color: @gray-text;
@@ -28,9 +36,12 @@
 			transform: translateY(-50%);
 			display: block;
 			width: 1px;
-			height: 21px;
+			height: 1.4rem;
 			background-color: @gray-bg;
-			opacity: 0.6;
+			opacity: .6;
+			@media @tablet {
+				display: none;
+			}
 		}
 	}
 	&__social {

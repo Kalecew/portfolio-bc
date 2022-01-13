@@ -10,6 +10,7 @@
 		font-size: 0.93rem;		
 		border-bottom: 3px solid transparent;
 		border-top: 3px solid transparent;
+		white-space: nowrap;
 	}
 	&__button {
 	}
@@ -47,7 +48,10 @@
 	}
 	&--footer {
 		gap: 1.2rem;
+		flex-wrap: wrap;
+		justify-content: center;
 		&__list {
+			margin: .5rem 0;
 			gap: 1.2rem;
 		}
 		&__link{
