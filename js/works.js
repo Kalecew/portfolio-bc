@@ -9,35 +9,35 @@ $(function(){
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "SRK", category: "Website", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme2.jpg", "files/portfolio/theme2.jpg"],  
+		img: ["files/portfolio/theme2.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "EduPro", category: "Interaction", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme3.jpg", "files/portfolio/theme3.jpg"],  
+		img: ["files/portfolio/theme3.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "EightyDays", category: "App", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme4.jpg", "files/portfolio/theme4.jpg"],  
+		img: ["files/portfolio/theme4.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "Lily", category: "App", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme5.jpg", "files/portfolio/theme5.jpg"],  
+		img: ["files/portfolio/theme5.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "Daisy", category: "Website", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme6.jpg", "files/portfolio/theme6.jpg"],  
+		img: ["files/portfolio/theme6.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "Nutritia", category: "Website", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme7.jpg", "files/portfolio/theme7.jpg"],  
+		img: ["files/portfolio/theme7.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "Techup", category: "Website", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme8.jpg", "files/portfolio/theme8.jpg"],  
+		img: ["files/portfolio/theme8.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "themKantere1", category: "App", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme9.jpg", "files/portfolio/theme9.jpg"],  
+		img: ["files/portfolio/theme9.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"}
 	]
 
@@ -125,7 +125,8 @@ $(function(){
 
 	
 	// открытие модального окна
-	const openModal = function() {
+	const openModal = function(e) {
+		e.preventDefault()
 		const modalId = $(this).data('openModal')
 		$(modalId).removeClass('hidden')
 		setTimeout(function(){
