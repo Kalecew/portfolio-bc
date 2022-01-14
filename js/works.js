@@ -4,41 +4,41 @@ $(function(){
 
 	const works = [
 		
-		{title: "Title Project", category: "Interaction", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p>"},
+		{title: "Keira", category: "Interaction", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme1.jpg", "files/portfolio/theme1-1.png", "files/portfolio/theme1-2.png"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "Website", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "SRK", category: "Website", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme2.jpg", "files/portfolio/theme2.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "Interaction", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "EduPro", category: "Interaction", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme3.jpg", "files/portfolio/theme3.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "App", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "EightyDays", category: "App", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme4.jpg", "files/portfolio/theme4.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "App", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "Lily", category: "App", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme5.jpg", "files/portfolio/theme5.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "Website", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "Daisy", category: "Website", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme6.jpg", "files/portfolio/theme6.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "Website", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "Nutritia", category: "Website", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme7.jpg", "files/portfolio/theme7.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "Website", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."},
+		{title: "Techup", category: "Website", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme8.jpg", "files/portfolio/theme8.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
-		{title: "Title Project", category: "App", year: "2018", client: "Creative Agency", 
-		img: "", 
-		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est."}
+		{title: "themKantere1", category: "App", year: "2018", client: "Creative Agency", 
+		img: ["files/portfolio/theme9.jpg", "files/portfolio/theme9.jpg"],  
+		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"}
 	]
 
 
@@ -47,7 +47,7 @@ $(function(){
 			<li class="works__item" data-category="${works[id].category}">
 				<button class="works__btn" type="button" data-open-modal="#portfolio" data-work-id="${id}">
 					<div class="works__card card-work">
-						<img class="card-work__img" src="${works[id].img}" alt="${works[id].title}">
+						<div class="card-work__img-wrap"><img class="card-work__img" src="${works[id].img[0]}" alt="${works[id].title}"></div>
 						<div class="card-work__text">
 							<div class="card-work__category">${works[id].category}</div>
 							<div class="card-work__title-wrap">
@@ -61,7 +61,20 @@ $(function(){
 		`
 	}
 
+	const htmlPreviews = (img, title) => {
+		return `
+			<div class="slider-previews__item">
+				<img class="slider-previews__img" src="${img}" alt="${title}">
+			</div>
+		`
+	}
+
 	const htmlPortfolio = (id) => {
+		let previews = ""
+		$.each(works[id].img, function(id, val){
+			previews += htmlPreviews(val, works[id].title)
+		})
+		
 		return `
 			<div class="slider-works__item">
 				<!-- Отдельная работа -->
@@ -70,12 +83,7 @@ $(function(){
 					<!-- https://kenwheeler.github.io/slick/ -->
 					<div class="card-modal-work__previews slider-previews">
 						<div class="slider-previews__list" data-slick-previews>									
-							<div class="slider-previews__item">
-								<img class="slider-previews__img" src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image1" alt="${works[id].title}">
-							</div>
-							<div class="slider-previews__item">
-								<img class="slider-previews__img" src="http://dummyimage.com/600x800/4d494d/686a82.gif&text=placeholder+image2" alt="${works[id].title}">
-							</div>
+							${previews}
 						</div>
 					</div>
 					<!-- Текстовое описание работы -->

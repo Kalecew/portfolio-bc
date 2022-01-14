@@ -14,8 +14,6 @@
 		position: relative;
 		@media @laptop {
 			gap: 2rem;
-		}
-		@media @tablet {
 			flex-direction: column-reverse;
 			align-items: center;
 		}
@@ -24,7 +22,8 @@
 		display: flex;
 		align-items: flex-end;
 		position: relative;
-		@media @tablet {
+		flex: 1 1 auto;
+		@media @laptop {
 			width: 50%;
 		}
 		@media @mobile {
@@ -40,17 +39,13 @@
 			left: 1.33rem;
 			bottom: 0;
 			@media @laptop {
-				width: 16.66rem;
-				height: 16.66rem;
+				left: 50%;
+				transform: translateX(-50%);
 			}	
 			@media @tablet {
-				width: 13.33rem;
-				height: 13.33rem;
-			}	
-			@media @mobile {
 				width: 16.66rem;
 				height: 16.66rem;
-			}			
+			}				
 		}
 	}
 	&__photo {
@@ -64,9 +59,7 @@
 		flex: 1 2 auto;
 		@media @laptop {
 			padding-top: 0;
-		}
-		@media @tablet {
-			max-width: none;			
+			max-width: none;
 		}
 	}
 	&__title {

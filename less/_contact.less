@@ -7,8 +7,15 @@
 	&__right {
 		flex: 0 1 auto;
 		width: 31.33rem;
+		height: 42rem;
 		background: @gray-bg;
-		@media @tablet {
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+		@media @laptop-m {
+			height: 43rem;
+		}
+		@media @laptop {
 			display: none;
 		}
 	}
@@ -26,5 +33,9 @@
 		margin-bottom: 3rem;
 	}
 	&__form {
+	}
+	&__img {
+		width: auto;
+		height: 100%;
 	}
 }
