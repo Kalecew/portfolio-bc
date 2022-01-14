@@ -7,8 +7,10 @@
 	&__right {
 		flex: 0 1 auto;
 		width: 31.33rem;
-		// height: 46.66rem;
 		background: @gray-bg;
+		@media @tablet {
+			display: none;
+		}
 	}
 	&__header {
 		margin-bottom: 2rem;
