@@ -16,6 +16,9 @@
 		width: 100%;
 		transform: rotateX(90deg);
 		transition: transform .2s linear;
+		@media @laptop-m {
+			width: auto;
+		}
 		&--full {
 			max-width: @content-max-width;
 		}
@@ -27,6 +30,18 @@
 		}
 	}
 	&__content {
+		@media @laptop-m {
+			width: 52rem;
+		}
+		@media @laptop {
+			width: 49rem;
+		}
+		@media @tablet {
+			width: 26rem;
+		}
+		@media @mobile {
+			width: 19rem;
+		}
 	}
 	&__close {
 		.fa-icon;

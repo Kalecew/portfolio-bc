@@ -165,6 +165,7 @@ $(function(){
 		dots: true,
 		fade: true,
 		autoplay: true,
+		adaptiveHeight: true,
   		autoplaySpeed: 2000
 	})
 	$('#slick-works').slick({
@@ -175,6 +176,7 @@ $(function(){
 		dots: false,
 		fade: true,
 		initialSlide: 0,
+		adaptiveHeight: true,
 		swipe: false
 	})
 	$('[data-slick-works-prev]').click(function(){

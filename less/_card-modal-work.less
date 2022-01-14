@@ -1,15 +1,25 @@
 .card-modal-work {
 	display: flex;
+	@media @laptop-m {
+		flex-direction: column-reverse;
+		width: min-content;
+    	margin: 0 auto;
+	}
 	&__previews {
-		flex: 0 0 auto;
+		flex: 1 1 auto;
 	}
 	&__content {
+		flex: 0 0 auto;
 		width: 28rem;
 		height: 37rem;
     	padding: 3.33rem 1.33rem 1.33rem 1.33rem;
     	position: relative;
     	display: flex;
     	flex-direction: column;
+    	@media @laptop-m {
+			width: 100%;
+			height: auto;
+		}
 	}
 	&__title {
 		text-transform: uppercase;
@@ -53,6 +63,9 @@
 		line-height: 2;
 		font-weight: 300;
 		max-width: 21rem;
+		@media @laptop-m {
+			max-width: none;
+		}
 	}
 	&__footer{
 		margin-top: auto;

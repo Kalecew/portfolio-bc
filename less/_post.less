@@ -8,6 +8,7 @@
 	}
 	@media @tablet {
 		flex-direction: column;
+		max-width: 370px;
 	}
 	&__img-wrap {
 	}
@@ -69,6 +70,10 @@
 		color: @dark-gray-text;
 		margin-top: 1.6rem;
 		margin-bottom: 2rem;
+		@media @mobile {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
 	}
 	&__btn {
 		margin-top: auto;

@@ -2,12 +2,30 @@
 	background-color: @dark-bg;
 	display: flex;
 	align-items: center;
-	&__list{
+	&__list{		
 		width: 52rem;
+		@media @laptop {
+			width: 49rem;
+		}
+		@media @tablet {
+			width: 26rem;
+		}
+		@media @mobile {
+			width: 19rem;
+		}
 	}
 	&__item {
 		height: 37rem;
 		overflow: hidden;
+		@media @laptop {
+			height: 36rem;
+		}
+		@media @tablet {
+			height: 19rem;
+		}
+		@media @mobile {
+			height: 14rem;
+		}
 	}
 	&__img {
 		width: 100%;
