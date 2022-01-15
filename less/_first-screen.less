@@ -2,8 +2,10 @@
 	&__inner {
 		display: flex;
 		background: url("../img/first_screen_bg.png") right bottom no-repeat;
-		background-size: cover;
 		align-items: stretch;
+		@media @laptop {
+			background-size: cover;
+		}
 		@media @tablet {
 			background: none;
 		}
@@ -15,7 +17,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		line-height: 1;
-		padding: 3.33rem 0 0;
+		padding: 3.33rem 0;
 	}
 	&__overhead {
 		font-weight: 200;
@@ -47,8 +49,8 @@
 		}
 	}
 	&__img-wrap {
-		flex: 0 1 24.53rem;
-		margin-right: 5.33rem;
+		flex: 0 1 25.53rem;
+    	margin-right: 4.33rem;
 		align-self: flex-end;
 		@media @tablet {
 			display: none;
