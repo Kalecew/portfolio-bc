@@ -31,8 +31,31 @@
 		}
 	}
 }
+
+
 @media print{
-	body * { visibility: hidden; }
-	.resume__title { visibility: visible; }
-	.resume__timeline * { visibility: visible; }
+	body * {
+		visibility: hidden;
+	}
+	section, header, footer {
+		display: none;
+	}
+	#resume {
+		position: relative;
+	}
+	.resume, .resume * {
+		visibility: visible;
+	}
+	.resume {
+		width: 100%;
+		&__share-btns, &__hireme-btn{
+			display: none;
+		}
+		&__timeline {
+			flex-direction: row !important;
+		}
+	}
+	.timeline__left * {
+	    text-align: right !important;
+	}
 }

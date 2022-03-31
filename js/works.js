@@ -5,11 +5,11 @@ $(function(){
 	const works = [
 		
 		{title: "Keira", category: "Interaction", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme1.jpg", "files/portfolio/theme1-1.png", "files/portfolio/theme1-2.png"],  
+		img: ["files/portfolio/theme1.jpg", "files/portfolio/theme1-1.jpg", "files/portfolio/theme1-2.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "SRK", category: "Website", year: "2018", client: "Creative Agency", 
-		img: ["files/portfolio/theme2.jpg"],  
+		img: ["files/portfolio/theme2.jpg", "files/portfolio/theme2-1.jpg", "files/portfolio/theme2-2.jpg"],  
 		description: "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur, dolores distinctio aperiam voluptates commodi. Odio amet, obcaecati.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet cupiditate impedit libero placeat, est, iusto aut consequuntur.</p>"},
 		
 		{title: "EduPro", category: "Interaction", year: "2018", client: "Creative Agency", 
