@@ -1,14 +1,14 @@
-DEMO
+DEMO <br />
 https://kalecew.github.io/portfolio-bc
 
 # portfolio-bc
 Сайт портфолио - блок с работами которые можно динамически подгружать и фильтровать, окно со слайдером работ, в котором есть слайдер для изображений отдельно для каждой работы, слайдер с отзывами, блок с превьюхами на три последние статьи из блога, окно обратной связи, окно с резюме и кнопками "Download PDF"  и "Print"
 
-Предварительные действия
-		1. Установить nodejs (проверка npm -v)
-		2. npm install less –g (проверка lessc -v)
-			▪ Ошибка lessc : Невозможно загрузить файл C:\Users\Admin\AppData\Roaming\npm\lessc.ps1, так как выполнение сценариев отключено в этой системе.
-				• Set-ExecutionPolicy unrestricted
+Предварительные действия<br />
+		1.	Установить nodejs (проверка npm -v)
+		2.	npm install less –g (проверка lessc -v)
+			> Ошибка lessc : Невозможно загрузить файл C:\Users\Admin\AppData\Roaming\npm\lessc.ps1, так как выполнение сценариев отключено в этой системе.
+				> Set-ExecutionPolicy unrestricted
 		3. npm install -g less-plugin-clean-css
 		4. npm install -g less-plugin-autoprefix
 		5. В SublimeText установить плагин LESS2CSS
