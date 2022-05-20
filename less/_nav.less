@@ -15,7 +15,6 @@
 	&__button {
 	}
 	&--header {
-		gap: 2.66rem;
 		@media @tablet {
 			height: 0;
 			padding: 0 3rem;
@@ -31,10 +30,17 @@
 			transition: padding .2s linear;
 		}
 		&__list {
-			gap: 2.66rem;
+			margin: 0 2.66rem 0 0;
 			@media @tablet {
 				flex-direction: column;		
 				align-items: center;
+				margin: 0 0 2.66rem 0;
+			}
+		}
+		&__item + &__item {
+			margin: 0 0 0 2.66rem;
+			@media @tablet {
+				margin: 2.66rem 0 0 0;
 			}
 		}
 		&__link{
@@ -47,12 +53,13 @@
 		}
 	}
 	&--footer {
-		gap: 1.2rem;
 		flex-wrap: wrap;
 		justify-content: center;
 		&__list {
-			margin: .5rem 0;
-			gap: 1.2rem;
+			margin: .5rem 1.2rem .5rem 0;
+		}
+		&__item + &__item {
+			margin-left: 1.2rem;
 		}
 		&__link{
 			font-weight: 400;

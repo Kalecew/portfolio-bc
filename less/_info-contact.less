@@ -2,7 +2,9 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: .6rem;
+	}
+	&__item + &__item {
+		margin-top: .6rem;
 	}
 	&__item {
 		display: flex;

@@ -1,11 +1,9 @@
 .timeline {
 	display: flex;
-	gap: 6rem;
 	position: relative;
 	max-width: 50rem;
 	@media @tablet {
 		flex-direction: column;
-		gap: 4rem;
 	}
 	&::before{
 		content: "";
@@ -20,6 +18,10 @@
 	}
 	&__left {
 		flex: 1 1 0;
+		margin: 0 6rem 0 0;
+		@media @tablet {
+			margin: 0 0 4rem 0;
+		}
 		& *{
 			text-align: right;
 			@media @tablet {

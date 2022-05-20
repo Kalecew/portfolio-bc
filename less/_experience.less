@@ -5,12 +5,12 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
-		@media @tablet {
-			gap: 1rem;
-		}
 	}
-	&__item {
+	&__item + &__item {
+		margin-top: 3rem;
+		@media @tablet {
+			margin-top: 1rem;
+		}
 	}
 	&__date {
 		text-decoration: underline;

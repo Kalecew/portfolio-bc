@@ -11,7 +11,6 @@
 	}
 	&__share-btns {
 		display: flex;
-		gap: 1rem;
 		margin-bottom: 5rem;
 		@media @mobile {
 			flex-direction: column;
@@ -19,6 +18,10 @@
 		}
 	}
 	&__download-btn {
+		margin: 0 1rem 0 0;
+		@media @mobile {
+			margin: 0 0 1rem 0;
+		}
 	}
 	&__print-btn {
 	}

@@ -23,15 +23,16 @@
 	}
 	&__list {
 		display: grid;
-		// grid-template-columns: repeat(3, minmax(17.13rem, 1fr));
 		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem;
 		@media @laptop {
 			grid-template-columns: repeat(1, 1fr);		
-			gap: 3rem;
 		}
 	}
-	&__item {
+	&__item + &__item {
+		margin: 0 0 0 2rem;
+		@media @laptop {
+			margin: 3rem 0 0 0;
+		}
 	}
 	&__card {
 		@media @tablet {

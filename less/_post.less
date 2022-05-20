@@ -2,7 +2,6 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 1.2rem;
 	@media @laptop {
 		flex-direction: row;
 	}
@@ -11,6 +10,13 @@
 		max-width: 370px;
 	}
 	&__img-wrap {
+		margin: 0 0 1.2rem 0;
+		@media @laptop {
+			margin: 0 1.2rem 0 0;
+		}
+		@media @tablet {
+			margin: 0 0 1.2rem 0;
+		}
 	}
 	&__img {
 		width: 100%;
@@ -70,7 +76,7 @@
 		color: @dark-gray-text;
 		margin-top: 1.6rem;
 		margin-bottom: 2rem;
-		@media @mobile {
+		@media @tablet {
 			margin-top: 1rem;
 			margin-bottom: 1rem;
 		}

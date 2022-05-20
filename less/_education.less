@@ -6,9 +6,9 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
 	}
-	&__item {
+	&__item + &__item {
+		margin-top: 3rem;
 	}
 	&__date {
 		text-decoration: underline;

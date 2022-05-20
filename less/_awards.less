@@ -5,7 +5,9 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+	}
+	&__item + &__item {
+		margin-top: 2rem;
 	}
 	&__item {
 		position: relative;

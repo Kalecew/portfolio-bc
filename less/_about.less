@@ -10,10 +10,8 @@
 	}	
 	&__inner {
 		display: flex;
-		gap: 4rem;
 		position: relative;
 		@media @laptop {
-			gap: 2rem;
 			flex-direction: column-reverse;
 			align-items: center;
 		}
@@ -23,8 +21,10 @@
 		align-items: flex-end;
 		position: relative;
 		flex: 1 1 auto;
+		margin: 0 4rem 0 0;
 		@media @laptop {
 			width: 50%;
+			margin: 2rem 0 0 0;
 		}
 		@media @mobile {
 			width: 100%;
@@ -91,7 +91,6 @@
 	}
 	&__buttons {
 		display: flex;
-		gap: 1rem;
 		margin-top: 3.8rem;
 		@media @tablet {
 			margin-top: 2.8rem;
@@ -100,5 +99,11 @@
 			flex-direction: column;
 			margin-top: 1rem;
 		}	
+	}
+	&__hire-btn {
+		margin: 0 1rem 0 0;
+		@media @mobile {
+			margin: 0 0 1rem 0;
+		}
 	}
 }

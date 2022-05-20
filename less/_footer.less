@@ -7,7 +7,6 @@
 		align-items: center;
 		padding: .8rem 0;
 		flex-wrap: wrap;
-		gap: 1rem;
 		@media @laptop {
 			flex-direction: column-reverse;
 		}
@@ -15,12 +14,16 @@
 	&__left {
 		display: flex;
 		align-items: center;
-		gap: 2rem;
 		margin: .5rem 0;
-		flex-wrap: wrap-reverse;
     	justify-content: center;
+    	@media @tablet {
+			flex-direction: column-reverse;
+		}
 	}
 	&__right {
+		@media @laptop {
+			margin-bottom: 1rem;
+		}
 	}
 	&__copyright {
 		font-size: .93rem;
@@ -28,6 +31,10 @@
 		font-weight: 400;
 		color: @gray-text;
 		position: relative;
+		margin: 0 2rem 0 0;
+		@media @tablet {
+			margin: 2rem 0 0 0;
+		}
 		&::after{
 			content:"";
 			position: absolute;
